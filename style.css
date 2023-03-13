@@ -17,6 +17,7 @@ h2{
 
 article{
     margin: 10px;
+    padding-left: 5px;
     background-color: var(--Pokémon-Logo-Yellow-Shadow);
     border-radius: 4px;
 }
