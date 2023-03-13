@@ -1,0 +1,32 @@
+body{
+    background-color: gray;
+}
+
+h1{
+    font-size: 5rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--Pokémon-Logo-Yellow);
+    -webkit-text-stroke: 4px var(--Pokémon-Logo-Dark-Blue);
+    
+}
+
+article{
+    margin: 10px;
+    background-color: var(--Pokémon-Logo-Yellow-Shadow);
+    border-radius: 4px;
+}
+
+/* classes */
+.pokemon-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+:root {
+    --Pokémon-Logo-Yellow: #ffcb05;
+    --Pokémon-Logo-Yellow-Shadow: #c7a008;
+    --Pokémon-Logo-Light-Blue: #2a75bb;
+    --Pokémon-Logo-Dark-Blue: #3c5aa6;
+
+  }
