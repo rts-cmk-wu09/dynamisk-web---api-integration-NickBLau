@@ -1,5 +1,6 @@
 body{
     background-color: gray;
+    /* background-color:var(--Pokémon-Logo-Light-Blue); */
 }
 
 h1{
@@ -13,19 +14,36 @@ h1{
 
 h2{
     color: var(--Pokémon-Logo-Yellow);
+    text-align: center;
 }
 
 article{
     margin: 10px;
-    padding-left: 5px;
     background-color: var(--Pokémon-Logo-Yellow-Shadow);
     border-radius: 4px;
+    border: 2px solid black;
 }
 
 /* classes */
 .pokemon-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dex-entry{
+    background-color: #ffcb05;
+    margin-left: 5px;
+    width: 30px;
+    text-align: center;
+}
+
+.dex-types{
+    text-align: center;
+}
+
+.pokemon-image{
+    display: block;
+    margin: auto;
 }
 
 :root {
