@@ -1,18 +1,16 @@
 let pokemonList = document.querySelector("#pokemon-list")
 
-fetch("https://pokeapi.co/api/v2/pokemon")
-.then((response) => response.json())
-.then((data) => {data.results.forEach(result =>{
-    pokemonList.innerHTML +=
-    `        <article>
-    <h2>${result.name}</h2>
-    <img src="pokemon-img" alt="img.alt">
-    <p>${result.url.abilties}</p>
+
+for (let i = 1; i < 11; i++) {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
+    .then((response) => response.json())
+    .then((data) =>pokemonList.innerHTML +=
+    `        <article>  
+    <p class="dex-entry">#${data.id}</p>
+    <img class="pokemon-image" src="${data.sprites.front_default}" alt=" ">
+    <h2>${data.name}</h2>
+    <p class="dex-types">${data.types.map( type => type.type.name).join(' & ')} </p>
+    
 </article>`
-})
-    console.log(data.results[0])} );
+)}
 
-
- fetch("https://pokeapi.co/api/v2/pokemon/1/")
- .then((response) => response.json())
- .then((data) => console.log(data));
