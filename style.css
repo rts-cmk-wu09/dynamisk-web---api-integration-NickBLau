@@ -31,6 +31,10 @@ article{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.grass{
+background-color: green;
+}
+
 .dex-entry{
     background-color: var(--Pokémon-Logo-Yellow);
     color: var(--Pokémon-Logo-Dark-Blue);
