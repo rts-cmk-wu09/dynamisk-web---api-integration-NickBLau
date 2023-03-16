@@ -35,6 +35,14 @@ article{
 background-color: green;
 }
 
+.fire{
+background-color: red;
+}
+
+.water{
+    background-color: blue;
+}
+
 .dex-entry{
     background-color: var(--Pokémon-Logo-Yellow);
     color: var(--Pokémon-Logo-Dark-Blue);
