@@ -26,6 +26,9 @@ article{
 }
 
 input{
+    display: block;
+    width: 200px;
+    margin: auto;
     font-size: 1rem;
 }
 
