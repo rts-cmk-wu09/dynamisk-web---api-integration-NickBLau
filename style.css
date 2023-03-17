@@ -25,23 +25,22 @@ article{
     border: 2px solid black;
 }
 
+input{
+    font-size: 1rem;
+}
+
+
 /* classes */
+.serach-wrapper{
+    margin: 10px;
+}
+
 .pokemon-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
 }
 
-.grass{
-background-color: green;
-}
-
-.fire{
-background-color: red;
-}
-
-.water{
-    background-color: blue;
-}
 
 .dex-entry{
     background-color: var(--Pokémon-Logo-Yellow);
@@ -53,9 +52,25 @@ background-color: red;
 
 .dex-types{
     text-align: center;
-    font-size: 1.5rem;
-    color: black;
+
+    font-size: 1.3rem;
+    color: whitesmoke;
+    
+    border-radius: 100px;
+    margin-bottom: 10px;
 }
+
+.dex-types span{
+    border-radius: 10px;
+    display: inline-flex;
+    width: 100px;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
 
 .pokemon-image{
     display: block;
@@ -77,3 +92,79 @@ h2::first-letter{
     font-size: 2x.5rem;
     color: var(--Pokémon-Logo-Light-Blue);
 }
+
+.hide {
+    display: none;
+  }
+  
+  .normal {
+    background: #BABAAE;
+  }
+  
+  .fighting {
+    background: #A75543;
+  }
+  
+  .flying {
+    background: #78A2FF;
+  }
+  
+  .poison {
+    background: #A95CA0;
+  }
+  
+  .ground {
+    background: #EECC55;
+  }
+  
+  .rock {
+    background: #CCBD72;
+  }
+  
+  .bug {
+    background: #C2D21E;
+  }
+  
+  .ghost {
+    background: #7975D7;
+  }
+  
+  .steel {
+    background: #C4C2DB;
+  }
+  
+  .fire {
+    background: #FA5643;
+  }
+  
+  .water {
+    background: #56ADFF;
+  }
+  
+  .grass {
+    background: #8CD750;
+  }
+  
+  .electric {
+    background: #FDE139;
+  }
+  
+  .psychic {
+    background: #FA65B4;
+  }
+  
+  .ice {
+    background: #96F1FF;
+  }
+  
+  .dragon {
+    background: #8673FF;
+  }
+  
+  .dark {
+    background: #8D6855;
+  }
+  
+  .fairy {
+    background: #F9AEFF;
+  }
