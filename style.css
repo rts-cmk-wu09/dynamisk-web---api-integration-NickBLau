@@ -71,6 +71,12 @@ input{
     border: 2px solid black;
 }
 
+.weight-height{
+text-align: center;
+
+}
+
+
 
 .pokemon-image{
     display: block;
@@ -134,15 +140,15 @@ h2::first-letter{
   }
   
   .fire {
-    background: #FA5643;
+    background: #f72008;
   }
   
   .water {
-    background: #56ADFF;
+    background: #1f18ec;
   }
   
   .grass {
-    background: #8CD750;
+    background: #50a60a;
   }
   
   .electric {
