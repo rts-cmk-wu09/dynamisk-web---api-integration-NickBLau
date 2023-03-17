@@ -10,7 +10,7 @@ for (let i = 1; i <= 10; i++) {
     .then((response) => response.json())
     .then((data) => pokemonList.innerHTML +=`
     <article>  
-    <p class="dex-entry">#${data.id}</p>
+    <p class="dex-entry">#${data.id.toString().padStart(3, '0')}</p>
     <a href="details.html?name=${data.name}"><img class="pokemon-image ${data.types[0].type.name}" src="${data.sprites.front_default}" alt=" "></a>
     <h2>${data.name}</h2>
 
@@ -24,4 +24,5 @@ for (let i = 1; i <= 10; i++) {
     <p> weight: ${data.weight}  </p>
     <p> height: ${data.height} </p>
     <div>
-</article>`)}
+</article>`
+    )}
