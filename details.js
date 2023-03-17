@@ -10,6 +10,8 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonname}`)
 
 <section>
 <h2>${pokemonData.forms[0].name}</h2>
+<img class="pokemon-image ${pokemonData.types[0].type.name}" src="${pokemonData.sprites.front_default}" alt="${pokemonData.forms[0].name} front">
+<img class="pokemon-image ${pokemonData.types[0].type.name}" src="${pokemonData.sprites.back_default}" alt="${pokemonData.forms[0].name} back">
 
 
 
